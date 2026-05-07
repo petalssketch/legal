@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Renewal</title>
+  <style>
+    :root {
+      --bg: #FAFAF7;
+      --surface: #FFFFFF;
+      --text: #1A1A1A;
+      --muted: #6B6B66;
+      --accent: #FF5A3C;
+      --border: #E5E5DF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 8px 0 4px;
+      letter-spacing: -0.4px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 32px 0 8px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 20px 0 6px;
+    }
+    p, li { font-size: 15px; color: var(--text); }
+    ul { padding-left: 22px; margin: 8px 0 12px; }
+    .pill {
+      display: inline-block;
+      background: #fff5f1;
+      color: var(--accent);
+      border: 1px solid #ffd6cc;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+    code {
+      background: #f2f2ee;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand"><span class="brand-mark">R</span> Renewal</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: 2026-05-07 · Last updated: 2026-05-07</div>
+  </header>
+
+  <p>
+    Renewal exists because we believe you should be able to track every recurring charge you pay
+    <em>without</em> handing your bank login over to anyone. This policy spells out exactly what
+    we collect, what we don't, and what we do with it.
+  </p>
+
+  <div class="callout">
+    <strong>The short version.</strong> We never connect to your bank. We never read your email.
+    Screenshots you import for OCR never leave your device. Your subscription list is stored in
+    your account on our backend (Supabase) and protected by row-level security so nobody — including
+    other Renewal users — can read it but you and anyone you've explicitly shared a household with.
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>
+    "Renewal," "we," "us," and "our" refer to the team building this application. You can reach us
+    at <a href="mailto:privacy@renewal.app">privacy@renewal.app</a> with any privacy question or request.
+  </p>
+
+  <h2>2. What we collect</h2>
+
+  <h3>2.1 Account information</h3>
+  <ul>
+    <li>Email address (required to create an account).</li>
+    <li>Password — stored only as a salted, hashed value by Supabase Auth. We never see the plaintext.</li>
+    <li>Optional display name and preferred currency.</li>
+  </ul>
+
+  <h3>2.2 Subscription data you enter</h3>
+  <ul>
+    <li>Merchant name, price, billing cycle, next renewal date, optional trial-end date, optional category, optional cancel-URL.</li>
+    <li>Whether a subscription is shared with a household and the split percentage.</li>
+    <li>Status (active / canceled / paused) and your notes.</li>
+  </ul>
+
+  <h3>2.3 Household data (if you opt in)</h3>
+  <ul>
+    <li>Household name, invite code, and which two users are members.</li>
+    <li>Settlement records you create (who-owes-whom amounts you log after settling outside the app — these are a ledger only; we never move money).</li>
+  </ul>
+
+  <h3>2.4 Purchase data</h3>
+  <ul>
+    <li>If you buy the one-time Pro upgrade, we record the product ID, the RevenueCat transaction ID, the purchase timestamp, and the price + currency. We do not see your card number — that's handled by Apple, Google, or RevenueCat.</li>
+  </ul>
+
+  <h3>2.5 Local-only data (never uploaded)</h3>
+  <ul>
+    <li><strong>Screenshots used for OCR import.</strong> When you import from a screenshot, OCR runs on your device. The image is read from the system picker, parsed in memory, and discarded. We never receive the image, and the parsed text is shown to you for confirmation before any of it is saved.</li>
+    <li><strong>Local notification schedules.</strong> Trial-radar reminders (T-3 days, T-1 day, T-6 hours) are scheduled with the OS and fire entirely on-device.</li>
+    <li><strong>Biometric data.</strong> If you enable the biometric lock, FaceID / fingerprint matching happens on the device's secure enclave. We never receive your biometric template.</li>
+  </ul>
+
+  <h2>3. What we never collect</h2>
+
+  <p>The things we explicitly do <strong>not</strong> ask for, store, or process:</p>
+  <ul>
+    <li>Bank account credentials, card numbers, or transaction feeds.</li>
+    <li>Your email inbox (we don't scan messages, receipts, or invoices).</li>
+    <li>Your contact list, calendar, photos beyond the single screenshot you choose to import, or location.</li>
+    <li>Advertising identifiers (IDFA / Google AAID).</li>
+    <li>Behavioral analytics for ad targeting.</li>
+  </ul>
+
+  <h2>4. How we use your data</h2>
+  <ul>
+    <li>To show you your own subscriptions, totals, and renewal countdowns.</li>
+    <li>To schedule local trial-conversion reminders on your device.</li>
+    <li>To enable household sharing between exactly the two members you choose.</li>
+    <li>To verify your Pro entitlement when you sign in on a new device.</li>
+    <li>To respond to your support and privacy requests.</li>
+  </ul>
+  <p>We do not use your data to train models, build user profiles for sale, or target ads.</p>
+
+  <h2>5. How your data is protected</h2>
+  <ul>
+    <li><strong>Transport.</strong> All traffic between the app and our backend uses TLS.</li>
+    <li><strong>Storage.</strong> Data is stored in PostgreSQL via Supabase, with backups encrypted at rest.</li>
+    <li><strong>Row-level security.</strong> Every table that holds user data has RLS policies enforced in the database itself. Even with the public anon key, a user can only read rows they own — or, for shared subs, rows in their household.</li>
+    <li><strong>Authentication.</strong> Passwords are hashed by Supabase Auth (bcrypt). Sessions use short-lived JWTs and refresh tokens; you can sign out at any time from Settings.</li>
+  </ul>
+
+  <h2>6. Sharing data with third parties</h2>
+  <p>We use a small number of vendors strictly for the operational functions they provide:</p>
+  <ul>
+    <li><strong>Supabase</strong> — database, authentication, file storage. Our data processor.</li>
+    <li><strong>RevenueCat</strong> — to verify your one-time Pro purchase and enable Restore Purchase.</li>
+    <li><strong>Apple / Google</strong> — to process the in-app purchase itself; they handle payment and we never see your card.</li>
+  </ul>
+  <p>
+    We do not sell your data, share it with advertisers, or hand it to data brokers. We will only
+    disclose data in response to a valid legal process, and we will tell you when legally allowed.
+  </p>
+
+  <h2>7. Data retention and deletion</h2>
+  <ul>
+    <li>You can delete any individual subscription, settlement, or reminder from inside the app at any time.</li>
+    <li>You can delete your entire account by emailing <a href="mailto:privacy@renewal.app">privacy@renewal.app</a>. Account deletion cascades to every row tied to your user ID — subscriptions, reminders, household memberships, settlements, and purchases. Backups age out within 30 days.</li>
+    <li>If you leave a household, your shared sub references are removed; the other member keeps their own copies.</li>
+  </ul>
+
+  <h2>8. Your rights</h2>
+  <p>Depending on where you live, you may have legal rights to:</p>
+  <ul>
+    <li>Access a copy of the personal data we hold about you.</li>
+    <li>Correct inaccurate data.</li>
+    <li>Delete your data.</li>
+    <li>Restrict or object to certain processing.</li>
+    <li>Receive your data in a portable format (CSV export is built in for Pro users; we can also export your raw rows on request).</li>
+    <li>Withdraw consent.</li>
+    <li>Lodge a complaint with your local data-protection authority.</li>
+  </ul>
+  <p>To exercise any of these, email us. We aim to respond within 30 days.</p>
+
+  <h2>9. Children</h2>
+  <p>
+    Renewal is not directed to children under 13 (or under 16 in regions that require a higher age).
+    We do not knowingly collect data from children. If we discover we have, we will delete it.
+  </p>
+
+  <h2>10. International data transfers</h2>
+  <p>
+    Our backend may store and process data on servers located in the United States or the European Union,
+    depending on your Supabase region. Where required, we rely on standard contractual clauses or other
+    lawful transfer mechanisms.
+  </p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>
+    If we change this policy in a way that affects how your data is handled, we will update the
+    "Last updated" date above and, for material changes, give you in-app notice before the change
+    takes effect.
+  </p>
+
+  <h2>12. Contact</h2>
+  <p>
+    Privacy questions, requests, or complaints: <a href="mailto:privacy@renewal.app">privacy@renewal.app</a>.
+  </p>
+
+  <footer>
+    © 2026 Renewal. This document is a plain-language description of our practices and does not
+    constitute legal advice.
+  </footer>
+</main>
+</body>
+</html>
